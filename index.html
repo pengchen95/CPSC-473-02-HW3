@@ -53,6 +53,10 @@
           <button type="reset" class="btn btn-default">Reset</button>
         </form>
       </div>
+      <div id="ex1" class="modal">
+        <p>Thank you for your payment, </p>
+        <a href="#" rel="modal:close"></a>
+      </div>
     </div>
 
     <div class="panel panel-default">
@@ -137,7 +141,8 @@
       </p>
     </section>
     <section>
-      <p> <button type="submit">Validate the payment</button></p>
+      <p> <button type="submit" id="btnsub">Validate Payment</button></p>
+      <a href="#ex1" rel="modal:open" id="modOpen" ></a>
     </section>
 
   </form>

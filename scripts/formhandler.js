@@ -39,10 +39,24 @@
       var data = {};
       $(this).serializeArray().forEach(function(item) {
         data[item.name] = item.value;
-        console.log("inputted");
+        console.log(item.name + ' is ' + item.value);
+
+        var ex = document.getElementById('ex1');
+        var btn = document.getElementById('btn');
+        if (item.value == 'Mr.') {
+          ex.textContent += "Mr. ";
+        } else if (item.value == 'Ms.') {
+          ex.textContent += "Ms. "
+        }
+
+        if (item.name == 'username') {
+          ex.textContent += item.value + ".";
+        }
+
       });
 
       console.log(data);
+      document.getElementById('modOpen').click();
       this.reset();
       this.elements[0].focus();
     });

@@ -4,7 +4,7 @@ h1 {
 
 ul {
   margin: 0;
-  padding: 0;
+  padding: 10;
   list-style: none;
 }
 
@@ -29,7 +29,6 @@ label span {
 input, textarea {
   font: 1em sans-serif;
   width: 250px;
-  box-sizing: border-box;
   border: 1px solid #999;
 }
 
@@ -49,9 +48,11 @@ textarea {
 }
 
 fieldset {
-  width: 250px;
-  box-sizing: border-box;
+  width: 150px;
+  height: 110px;
   margin-left: 64px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid #999;
 }
 
@@ -67,4 +68,16 @@ label em {
   position: absolute;
   right: 10px;
   top: 40px;
+}
+
+.mod {
+  padding: 1rem;
+  color: #22272a;
+  background: #dce3ec;
+  border-radius: 4px;
+  transition-duration: .25s;
+  border: #22272a;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 50px 0 0 100px;
 }
